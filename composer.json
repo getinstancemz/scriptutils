@@ -1,0 +1,13 @@
+{
+    "name": "getinstancemz/scriptutils",
+    "description": "various scriptlets and useful bits and bobs",
+    "authors": [
+        {
+            "name": "Matt Zandstra",
+            "email": "matt@getinstance.com"
+        }
+    ],
+    "bin": [
+        "bin/createDbAndUser.sh"
+    ]
+}
