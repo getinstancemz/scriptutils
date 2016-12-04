@@ -23,12 +23,11 @@ cd $WDIR
 echo "SHOW DATABASES" | $MYSQLROOTCMD
 echo "Please enter root db password: "
 read -s MYSQLROOTPASS
-echo $MYSQLROOTPASS 
 
 MYSQLISOCMD="$MYSQL -u$DBUSER  -p$DBPASS"
 MYSQLROOTCMD="$MYSQL -uroot  -p$MYSQLROOTPASS"
 
-echo $MYSQLISOCMD
+#echo $MYSQLISOCMD
 
 if echo "show databases" | $MYSQLROOTCMD | grep "^$DBNAME$" 2>&1 > /dev/null 
 then
